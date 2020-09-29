@@ -9,7 +9,7 @@ library(httr)
 library(XML)
 
 men <- 'https://en.wikipedia.org/wiki/List_of_Olympic_medalists_in_athletics_(men)'
-men_html <- read_html(men)
+#men_html <- read_html(men)
 
 r <- GET(men)
 
@@ -83,7 +83,7 @@ for(i in 1:53){
     mens_results <- df
   }
   if(i != 1){
-    mens_results <- rbind(womens_results,df)
+    mens_results <- rbind(mens_results,df)
   }
 }
 
