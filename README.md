@@ -25,3 +25,16 @@ Quick Link
 [Website]:https://wjsutton.github.io/
 
 ### :a: About
+
+This project involves webscraping Olympic results from two Wikipedia pages:
+- Women's results: [https://en.wikipedia.org/wiki/List_of_Olympic_medalists_in_athletics_(women)](https://en.wikipedia.org/wiki/List_of_Olympic_medalists_in_athletics_(women))
+- Men's results:   [https://en.wikipedia.org/wiki/List_of_Olympic_medalists_in_athletics_(men)](https://en.wikipedia.org/wiki/List_of_Olympic_medalists_in_athletics_(men))
+
+And converting to individual results tables into one consolidated table (dataframe). Details of scripts are here:
+- Script: [get_womens_results.R](get_womens_results.R) Output: [/data/womens_results.csv](data/womens_results.csv)
+- Script: [get_mens_results.R](get_mens_results.R) Output: [/data/mens_results.csv](data/mens_results.csv)
+
+The two results files are then merged together and followed by some data enrichment of parsing out countries and athletes from a combined field.
+- Script: [merge_and_clean_results.R](merge_and_clean_results.R) Output: [/data/combined_results.csv](data/combined_results.csv)
+
+
