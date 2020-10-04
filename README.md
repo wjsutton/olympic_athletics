@@ -1,6 +1,3 @@
-# olympic_athletics
- 
-
 <h1 style="font-weight:normal">
   Olympic Athletes 
 </h1>
