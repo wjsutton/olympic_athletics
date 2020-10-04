@@ -6,6 +6,7 @@ library(rworldmap)
 
 womens <- read.csv("data/womens_results.csv", stringsAsFactors = F)
 mens <- read.csv("data/mens_results.csv", stringsAsFactors = F)
+events <- read.csv("data/event_lookup.csv", stringsAsFactors = F)
 
 # merging cells that have become additional rows 
 womens$silver[17] <- paste0(womens$silver[17],' & ',womens$games[18])
@@ -40,13 +41,16 @@ combined$games <- gsub('details','',combined$games)
 combined$year <- stringr::str_extract(combined$games,'\\d+')
 combined$location <- gsub('\\d+ ','',combined$games)
 
+# Add event type column from lookup file
+combined <- dplyr::left_join(combined,events, by = c("event" = "event"))
 
 # use world map package to get list of countries
 
 data(countryExData)
-countries <- c(trimws(countryExData[, 2]),'Great Britain','Soviet Union','East Germany'
+countries <- c('Great Britain','Soviet Union','East Germany'
                ,'West Germany','United Team of Germany','Czechoslovakia','Trinidad and Tobago'
-               ,'Unified Team','Czech Republic')
+               ,'Unified Team','Czech Republic','Dominican Republic'
+               ,trimws(countryExData[, 2]))
 country_list <- paste(countries,collapse = '|')
 
 combined$gold_athlete <- gsub(country_list,'',combined$gold)
