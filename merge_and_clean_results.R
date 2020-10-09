@@ -49,7 +49,7 @@ combined <- dplyr::left_join(combined,events, by = c("event" = "event"))
 data(countryExData)
 countries <- c('Great Britain','Soviet Union','East Germany'
                ,'West Germany','United Team of Germany','Czechoslovakia','Trinidad and Tobago'
-               ,'Unified Team','Czech Republic','Dominican Republic'
+               ,'Unified Team','Czech Republic','Dominican Republic','Bahamas','Grenada','Bahrain'
                ,trimws(countryExData[, 2]))
 country_list <- paste(countries,collapse = '|')
 

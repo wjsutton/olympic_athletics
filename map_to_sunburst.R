@@ -4,6 +4,8 @@ events <- read.csv("data/event_lookup.csv", stringsAsFactors = F)
 sunburst <- read.csv("data/sunburst_mapping.csv", stringsAsFactors = F)
 combined <- read.csv("data/combined_results.csv", stringsAsFactors = F)
 
+all_years <- unique(combined$year)
+
 template <- data.frame(
   year=rep(sunburst$Year,nrow(events))
   ,level=rep(sunburst$Level,nrow(events))
@@ -15,6 +17,6 @@ template <- data.frame(
 )
 
 sunburst_mapped <- unique(dplyr::left_join(template,combined))
-write.csv(sunburst_mapped,"oylmpic_results_as_sunburst.csv",row.names = F)
+write.csv(sunburst_mapped,"data/olympic_results_as_sunburst.csv",row.names = F)
 
   
