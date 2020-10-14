@@ -32,7 +32,7 @@ And converting to individual results tables into one consolidated table (datafra
 The two results files are then merged together and followed by some data enrichment of parsing out countries and athletes from a combined field.
 - Script: [merge_and_clean_results.R](merge_and_clean_results.R) Output: [/data/combined_results.csv](data/combined_results.csv)
 
-See the viz on Tableau Public:<br>
+### :chart_with_upwards_trend: See the viz on Tableau Public:<br>
 <a href="https://public.tableau.com/profile/will7508#!/vizhome/RunningforOlympicGold/RunningforOlympicGold">
 <img src="https://public.tableau.com/static/images/Ru/RunningforOlympicGold/RunningforOlympicGold/1.png">
 </a>
