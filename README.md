@@ -3,11 +3,9 @@
 </h1>
 
 
-[![Status](https://www.repostatus.org/badges/latest/wip.svg)]() [![GitHub Issues](https://img.shields.io/github/issues/wjsutton/olympic_athletics.svg)](https://github.com/wjsutton/olympic_athletics/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/wjsutton/olympic_athletics.svg)](https://github.com/wjsutton/olympic_athletics/pulls) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+[![Status](https://img.shields.io/badge/status-active-success.svg)]() [![GitHub Issues](https://img.shields.io/github/issues/wjsutton/olympic_athletics.svg)](https://github.com/wjsutton/olympic_athletics/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/wjsutton/olympic_athletics.svg)](https://github.com/wjsutton/olympic_athletics/pulls) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 Collecting Olympic medal results in athletics for a dataviz project.
-
-:construction: Repo Under Construction :construction: 
 
 [Twitter][Twitter] :speech_balloon:&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[LinkedIn][LinkedIn] :necktie:&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[GitHub :octocat:][GitHub]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Website][Website] :link:
 
@@ -34,4 +32,7 @@ And converting to individual results tables into one consolidated table (datafra
 The two results files are then merged together and followed by some data enrichment of parsing out countries and athletes from a combined field.
 - Script: [merge_and_clean_results.R](merge_and_clean_results.R) Output: [/data/combined_results.csv](data/combined_results.csv)
 
-
+See the viz on Tableau Public:<br>
+<a href="https://public.tableau.com/profile/will7508#!/vizhome/RunningforOlympicGold/RunningforOlympicGold">
+<img src="https://public.tableau.com/static/images/Ru/RunningforOlympicGold/RunningforOlympicGold/1.png">
+</a>
